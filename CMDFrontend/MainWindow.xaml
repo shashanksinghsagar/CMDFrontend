@@ -1,0 +1,100 @@
+﻿<Window x:Class="CMDFrontend.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CMDFrontend"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40" >
+            </RowDefinition>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid Background="#06283D">
+            <Menu HorizontalAlignment="Right" 
+                  Background="#06283D"
+                  Margin="1"
+                  VerticalAlignment="Center">
+                <MenuItem Header="Sign In"
+                          FontStyle="Italic"
+                          FontSize="18"
+                          Foreground="White"
+                          VerticalAlignment="Center">
+                    <MenuItem Header="As a Doctor"
+                              Foreground="Black" Click="dSignInButton" 
+                              />
+                    <MenuItem Header="As a Patient" 
+                              Foreground="Black" 
+                              Click="pSignInButton"/>
+                </MenuItem>
+            </Menu>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Image Source="C:\Users\shash\OneDrive\Desktop\CMD\WpfCMDApp\Image\Icon\LoginImage.png"
+                   HorizontalAlignment="Left"/>
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="80"/>
+
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0"
+                       Content="Welcome to CMD"
+                       HorizontalContentAlignment="Center"
+                       Foreground="#06283D"
+                       FontSize="30"
+                       Margin="10,15"/>
+                <StackPanel Grid.Row="1">
+                    <Label Content="Username"
+                           HorizontalContentAlignment="Center"
+                           Margin="10,15,10,5"/>
+                    <TextBox Margin="10,5"
+                             Width="150"
+                             Background="#C4D7E0"/>
+
+                    <Label Content="Password"
+                           HorizontalContentAlignment="Center"
+                            Margin="10,15,10,5"/>
+                    <PasswordBox Margin="10,5"
+                             Width="150"
+                              Background="#C4D7E0"/>
+
+                    <Button Content="Log In"
+                            Width="80"
+                            Margin="10"
+                            Background="#06283D"
+                            Foreground="White"/>
+
+                </StackPanel>
+                <StackPanel Grid.Row="2">
+                    <Button Content="Login as Doctor"
+                            HorizontalAlignment="Right"
+                            Margin="5"
+                            Background="White"
+                            Foreground="LightGray"
+                            Width="140"
+                            BorderBrush="White" 
+                            Click="DoctorLogIn"/>
+                    <Button  Content="Login as Patient"
+                           HorizontalAlignment="Right"
+                             Margin="5"
+                            Background="White"
+                            Foreground="LightGray"
+                             Width="140"
+                             BorderBrush="White" 
+                             Click="PatientLogIn"/>
+                </StackPanel>
+
+
+            </Grid>
+        </Grid>
+
+    </Grid>
+</Window>

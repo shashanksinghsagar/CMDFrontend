@@ -1,0 +1,133 @@
+﻿<Page x:Class="CMDFrontend.Patient.View.AccountSetting"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CMDFrontend.Patient.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AccountSetting">
+
+    <Grid Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <Label Content="Account Settings"
+                   FontStyle="Italic"
+                   FontSize="28"
+                   HorizontalAlignment="Center"
+                   Margin="10,50,10,10"/>
+
+        </StackPanel>
+        <Grid Grid.Column="1" Margin="20,50">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="300"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="80"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="60"/>
+                </Grid.ColumnDefinitions>
+                <Ellipse Grid.Column="0" Width="70" Height="70"
+                         VerticalAlignment="Top"
+                         Margin="0,10">
+                    <Ellipse.Fill>
+                        <ImageBrush  ImageSource="https://www.pngitem.com/pimgs/m/264-2640465_passport-size-photo-sample-hd-png-download.png"
+                     />
+                    </Ellipse.Fill>
+                </Ellipse>
+                <Button Grid.Column="2"
+                        VerticalAlignment="Top"
+                        Background="#08283D"
+                        Content="Edit"
+                        Foreground="White"
+                        FontStyle="Italic"/>
+                <Grid Grid.Column="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="75"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <Label Grid.Row="0" Grid.Column="0"
+                           Content="Name:"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Right"
+                           FontStyle="Italic"
+                           FontSize="15"/>
+                    <Label Grid.Row="0" Grid.Column="1"
+                           Content="Shanks"
+                           VerticalAlignment="Center"
+                           FontStyle="Italic"/>
+                    <Label Grid.Row="1" Grid.Column="0"
+                           Content="E-mail:"
+                             VerticalAlignment="Center"
+                           HorizontalAlignment="Right"
+                           FontStyle="Italic"
+                            FontSize="15"/>
+                    <Label Grid.Row="1" Grid.Column="1"
+                           Content="shashanksinghsagar5@gmail.com"
+                            VerticalAlignment="Center"
+                           FontStyle="Italic"/>
+                    <Label Grid.Row="1" Grid.Column="2"
+                           Content="Phone No.:"
+                             VerticalAlignment="Center"
+                           HorizontalAlignment="Right"
+                           FontStyle="Italic"
+                            FontSize="15"/>
+                    <Label Grid.Row="1" Grid.Column="3"
+                           Content="9637046307"
+                            VerticalAlignment="Center"
+                           FontStyle="Italic"/>
+                    <Label Grid.Row="2" Grid.Column="0"
+                           Content="City:"
+                             VerticalAlignment="Center"
+                           HorizontalAlignment="Right"
+                           FontStyle="Italic"
+                            FontSize="15"/>
+                    <Label Grid.Row="2" Grid.Column="1"
+                           Content="Varanasi"
+                            VerticalAlignment="Center"
+                           FontStyle="Italic"/>
+                    <Label Grid.Row="3" Grid.Column="0"
+                           Content="State:"
+                             VerticalAlignment="Center"
+                           HorizontalAlignment="Right"
+                           FontStyle="Italic"
+                            FontSize="15"/>
+                    <Label Grid.Row="3" Grid.Column="1"
+                           Content="1234567890"
+                            VerticalAlignment="Center"
+                           FontStyle="Italic"/>
+                    <Label Grid.Row="4" Grid.Column="0"
+                           Content="Country:"
+                             VerticalAlignment="Center"
+                           HorizontalAlignment="Right"
+                           FontStyle="Italic"
+                            FontSize="15"/>
+                    <Label Grid.Row="4" Grid.Column="1"
+                           Content="Varanasi"
+                            VerticalAlignment="Center"
+                           FontStyle="Italic"/>
+                </Grid>
+            </Grid>
+
+        </Grid>
+
+    </Grid>
+   
+        
+    
+</Page>

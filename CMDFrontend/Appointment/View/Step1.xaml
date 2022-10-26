@@ -1,0 +1,59 @@
+﻿<Page x:Class="CMDFrontend.Appointment.View.Step1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CMDFrontend.Appointment.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Step1">
+
+    <Grid Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="120"/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Content="Select a patient to book Appointment/Consultation"
+                   FontSize="20"
+                   HorizontalAlignment="Center"
+                   Margin="0,35,0,0"
+                   Foreground="Gray"
+                   FontWeight="DemiBold"/>
+            <Image Grid.Row="1" Source="C:\Users\shash\OneDrive\Desktop\CMD\WpfCMDApp\Image\AppointmentImage\Flow 1 and 1 more page - Personal - Microsoft​ Edge 25-10-2022 23_26_48.png"/>
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Row="0">
+                    <Label Content="Patients"
+                       FontSize="15"
+                       FontWeight="Bold"
+                       Foreground="#06283D"
+                       Margin="30,0"/>
+                    <Border Margin="30,0"
+                        BorderBrush="LightGray"
+                        BorderThickness="1"
+                        Width="200"
+                        CornerRadius="10"
+                        HorizontalAlignment="Left">
+                        <TextBlock Height="20"
+                               Width="200"/>
+                    </Border>
+                </StackPanel>
+            </Grid>
+            <Button Content="Confirm" Grid.Row="3"
+                            Width="100"
+                            Background="LightGreen"
+                            Foreground="White"  />
+
+        </Grid>
+    </Grid>
+</Page>
